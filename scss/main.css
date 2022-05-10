@@ -1,1 +1,201 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+* {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+main {
+  padding: 5rem 0;
+  background-color: #ecf2f8;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  width: 327px;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: beige;
+}
+
+.card__personalInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card__personalInfo__imgContainer {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 28px;
+  width: 28px;
+}
+
+.card__personalInfo__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__personalInfo__name h2 {
+  font-weight: 500;
+  font-size: 13px;
+  color: #cfcfcf;
+  margin: 0;
+}
+
+.card__personalInfo__name p {
+  font-size: 11px;
+  color: rgba(207, 207, 207, 0.5);
+}
+
+.card__personalInfo__name .white-bg {
+  color: #48556a;
+}
+
+.card__personalInfo__name .white-bg-p {
+  color: #b5b9be;
+}
+
+.card__header {
+  color: #ecf2f8;
+  line-height: 1.1;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+
+.card__header--white {
+  color: #48556a;
+}
+
+.card__paragraph {
+  color: rgba(236, 242, 248, 0.7);
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.card__paragraph--white {
+  color: #9da3ae;
+}
+
+.card--daniel {
+  background-color: #7541c8;
+  background-image: url(../../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-size: 35%;
+}
+
+.card--jonathan {
+  background-color: #48556a;
+}
+
+.card--harmon {
+  background-color: white;
+}
+
+.card--abrams {
+  background-color: #19212e;
+}
+
+.card--kira {
+  background-color: white;
+}
+
+.border {
+  border: 2px solid #a775f1;
+}
+/*# sourceMappingURL=main.css.map */

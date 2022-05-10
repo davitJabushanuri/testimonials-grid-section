@@ -1,0 +1,93 @@
+.card {
+	width: $card-width-mobile;
+	padding: 2rem;
+	border-radius: 8px;
+	background-color: beige;
+
+	&__personalInfo {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		margin-bottom: 1rem;
+
+		&__imgContainer {
+			border-radius: 50%;
+			overflow: hidden;
+			height: 28px;
+			width: 28px;
+		}
+
+		&__name {
+			display: flex;
+			flex-direction: column;
+			h2 {
+				font-weight: 500;
+				font-size: 13px;
+				color: $light-gray;
+				margin: 0;
+			}
+
+			p {
+				font-size: 11px;
+				color: $light-gray-50;
+			}
+
+			.white-bg {
+				color: #48556a;
+			}
+
+			.white-bg-p {
+				color: #b5b9be;
+			}
+		}
+	}
+
+	&__header {
+		color: $grayish-blue;
+		line-height: 1.1;
+		font-weight: 500;
+		font-size: 20px;
+		margin-bottom: 1em;
+
+		&--white {
+			color: #48556a;
+		}
+	}
+
+	&__paragraph {
+		color: $grayish-blue-70;
+		font-size: 13px;
+		line-height: 18px;
+
+		&--white {
+			color: #9da3ae;
+		}
+	}
+
+	&--daniel {
+		background-color: $moderate-violet;
+		background-image: url(../../images/bg-pattern-quotation.svg);
+		background-repeat: no-repeat;
+		background-position-x: 90%;
+		background-size: 35%;
+	}
+	&--jonathan {
+		background-color: $dark-grayish;
+	}
+
+	&--harmon {
+		background-color: $white;
+	}
+
+	&--abrams {
+		background-color: $dark-blackish;
+	}
+
+	&--kira {
+		background-color: $white;
+	}
+}
+
+.border {
+	border: 2px solid #a775f1;
+}
