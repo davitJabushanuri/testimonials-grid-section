@@ -3,6 +3,14 @@
 }
 
 main {
-	padding: 5rem 0;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 4rem 0;
+	display: flex;
 	background-color: #ecf2f8;
+
+	@media (min-width: 1110px) {
+		align-items: center;
+	}
 }

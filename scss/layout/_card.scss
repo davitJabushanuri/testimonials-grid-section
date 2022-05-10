@@ -1,5 +1,4 @@
 .card {
-	width: $card-width-mobile;
 	padding: 2rem;
 	border-radius: 8px;
 	background-color: beige;
@@ -58,6 +57,7 @@
 		color: $grayish-blue-70;
 		font-size: 13px;
 		line-height: 18px;
+		font-weight: 400;
 
 		&--white {
 			color: #9da3ae;
@@ -65,25 +65,35 @@
 	}
 
 	&--daniel {
+		grid-area: daniel;
 		background-color: $moderate-violet;
 		background-image: url(../../images/bg-pattern-quotation.svg);
 		background-repeat: no-repeat;
 		background-position-x: 90%;
 		background-size: 35%;
+
+		@media (min-width: 1110px) {
+			background-size: 20%;
+			background-position-x: 80%;
+		}
 	}
 	&--jonathan {
+		grid-area: jonathan;
 		background-color: $dark-grayish;
 	}
 
 	&--harmon {
+		grid-area: jeanette;
 		background-color: $white;
 	}
 
 	&--abrams {
+		grid-area: patrick;
 		background-color: $dark-blackish;
 	}
 
 	&--kira {
+		grid-area: kira;
 		background-color: $white;
 	}
 }

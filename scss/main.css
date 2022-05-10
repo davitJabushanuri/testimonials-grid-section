@@ -81,21 +81,46 @@ select {
 }
 
 main {
-  padding: 5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  padding: 4rem 0;
+  display: flex;
   background-color: #ecf2f8;
+}
+
+@media (min-width: 1110px) {
+  main {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .grid-container {
   display: -ms-grid;
   display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-grid-columns: 327px;
+      grid-template-columns: 327px;
+      grid-template-areas: 'daniel' 'jonathan' 'jeanette' 'patrick' 'kira';
+  justify-items: center;
   gap: 2rem;
 }
 
+@media (min-width: 1110px) {
+  .grid-container {
+    gap: 30px;
+    -ms-grid-columns: (255px)[4];
+        grid-template-columns: repeat(4, 255px);
+        grid-template-areas: 'daniel daniel jonathan kira' 'jeanette patrick patrick kira';
+  }
+}
+
 .card {
-  width: 327px;
   padding: 2rem;
   border-radius: 8px;
   background-color: beige;
@@ -165,6 +190,7 @@ main {
   color: rgba(236, 242, 248, 0.7);
   font-size: 13px;
   line-height: 18px;
+  font-weight: 400;
 }
 
 .card__paragraph--white {
@@ -172,6 +198,9 @@ main {
 }
 
 .card--daniel {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: daniel;
   background-color: #7541c8;
   background-image: url(../../images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
@@ -179,19 +208,38 @@ main {
   background-size: 35%;
 }
 
+@media (min-width: 1110px) {
+  .card--daniel {
+    background-size: 20%;
+    background-position-x: 80%;
+  }
+}
+
 .card--jonathan {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: jonathan;
   background-color: #48556a;
 }
 
 .card--harmon {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: jeanette;
   background-color: white;
 }
 
 .card--abrams {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: patrick;
   background-color: #19212e;
 }
 
 .card--kira {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: kira;
   background-color: white;
 }
 
