@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "base/_reset.scss",
+        "base/_typography.scss",
+        "utilities/_variables.scss",
+        "layout/_global.scss",
+        "layout/_grid.scss",
+        "layout/_card.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
